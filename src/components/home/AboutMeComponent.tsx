@@ -16,35 +16,24 @@ export const AboutMeComponent = () => {
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
           <div className="md:col-span-6">
             <div className="grid grid-cols-12 gap-4 items-center">
-              <div className="col-span-7">
-                <div className="grid grid-cols-1 gap-4 " >
-                  <Image
+            <div className="col-span-11">
+                
+                <div className="relative">
+                            <div className="pe-12">
+                            <Image
                     src={state.about.data.image_1 || ''}
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
-                    className="shadow transitionImage rounded-lg"
+                    className="shadow  rounded-lg"
                     alt=""
                   />
-                </div>
-              </div>
+                            </div>
 
-              <div className="col-span-5">
-                <div className="grid grid-cols-1 gap-4 ">
-                  <Image
+                            <div className="absolute bottom-16 end-0">
+                            <Image
                     src={state.about.data.image_2 || ''}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    className="shadow transitionImage rounded-lg"
-                    alt=""
-                  />
-
-                  <div className="w-28 transitionImage h-28 ">
-                  <Image
-                    src={state.about.data.image_3 || ''}
                     width={0}
                     height={0}
                     sizes="100vw"
@@ -52,9 +41,17 @@ export const AboutMeComponent = () => {
                     className="shadow transitionImage max-h-40 rounded-lg"
                     alt=""
                   />
-                  </div>
-                </div>
+                                {/* <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
+                                    <a href="#!" data-type="youtube" data-id="S_CGed6E610" className="lightbox size-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
+                                    </a>
+                                </div> */}
+                            </div>
+                        </div>
+                
               </div>
+
+             
             </div>
           </div>
 
