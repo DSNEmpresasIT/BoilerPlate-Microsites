@@ -15,12 +15,10 @@ export const AboutMeComponent = () => {
       <div className="container relative">
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
           <div className="md:col-span-6">
-            <div className="grid grid-cols-12 gap-4 items-center">
-            <div className="col-span-11">
-                
-                <div className="relative">
-                            <div className="pe-12">
-                            <Image
+            <div className="grid grid-cols-12 gap-6 items-center">
+                            <div className="col-span-6">
+                                <div className="grid grid-cols-1 gap-6">
+                                <Image
                     src={state.about.data.image_1 || ''}
                     width={0}
                     height={0}
@@ -29,30 +27,32 @@ export const AboutMeComponent = () => {
                     className="shadow  rounded-lg"
                     alt=""
                   />
-                            </div>
-
-                            <div className="absolute bottom-16 end-0">
-                            <Image
+                                     <Image
                     src={state.about.data.image_2 || ''}
                     width={0}
                     height={0}
                     sizes="100vw"
-                    style={{ width: "100%"}}
-                    className="shadow transitionImage max-h-40 rounded-lg"
+                    style={{ width: "100%", height: "auto" }}
+                    className="shadow  rounded-lg"
                     alt=""
                   />
-                                {/* <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                    <a href="#!" data-type="youtube" data-id="S_CGed6E610" className="lightbox size-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
-                                        <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
-                                    </a>
-                                </div> */}
+                                </div>
+                            </div>
+
+                            <div className="col-span-6">
+                                <div className="grid grid-cols-1 gap-6">
+                                <Image
+                    src={state.about.data.image_3 || ''}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                    className="shadow  rounded-lg"
+                    alt=""
+                  />
+                                </div>
                             </div>
                         </div>
-                
-              </div>
-
-             
-            </div>
           </div>
 
           <div className="md:col-span-6">

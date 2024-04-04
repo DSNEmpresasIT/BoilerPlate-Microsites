@@ -8,6 +8,7 @@ import CarrouselComponent from "@/components/home/CarouselComponent";
 import { useDataContext } from "@/context/data-context/DataContext";
 import { DataContextActionTypes } from "@/context/data-context/types";
 import { mockGlobalData } from "@/utils/mock/mockData";
+import { DividerComponent } from "@/components/home/DividerComponent";
 
 export default function Index() {
   const { state, dispatch } = useDataContext();
@@ -31,10 +32,12 @@ export default function Index() {
     <>
       <Banner/>
       <AboutMeComponent />
+      <DividerComponent/>
       <CompanyInfoComponent />
       <div className="flex overflow-hidden justify-center">
         <CarrouselComponent />
       </div>
+      <DividerComponent/>
       <ContactComponent />
     </>
   )
