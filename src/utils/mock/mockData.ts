@@ -139,8 +139,8 @@ export const mockGlobalData = ():GlobalData => {
       link3: 'link3',
     },
     contactInformation: {
-      phone1: 'phone1',
-      phone2: 'phone2',
+      phone1: '3447623900',
+      phone2: '3447623923',
       adress: 'Planta Frigorífica Pueblo El Brillante, Dpto. Colón E.R. Argentina',
       mapUrl: 'https://www.google.com/maps/place/Frigorifico+El+Brillante+Srl/@-32.1847395,-58.2110189,3a,90y,69.67h,87.84t/data=!3m10!1e1!3m8!1sq2fhKGvPxPHc3QxU4V0yuA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Dq2fhKGvPxPHc3QxU4V0yuA%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D67.41841%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!9m2!1b1!2i36!4m22!1m15!4m14!1m5!1m1!1s0x95ae32e40315e8b9:0x969e4d40e0ab969!2m2!1d-63.8415527!2d-36.8224776!1m6!1m2!1s0x95ae2e73d2dc630b:0x6c08b9ffd11f3a94!2sFrigorifico+El+Brillante+Srl,+Dr.+Tavella+3283,+E3283+San+José,+Entre+Ríos!2m2!1d-58.2107598!2d-32.184642!3e0!3m5!1s0x95ae2e73d2dc630b:0x6c08b9ffd11f3a94!8m2!3d-32.1846053!4d-58.2106415!16s%2Fg%2F11c30t2j60?entry=ttu',
       schedule: 'Lunes - Viernes: 9:00 - 12:00'

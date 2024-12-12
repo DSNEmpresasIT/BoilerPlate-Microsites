@@ -7,6 +7,7 @@ import { DataContextActionTypes, DataContextStateTypes } from "@/context/data-co
 import { mockAboutData } from "@/utils/mock/mockData";
 import { useLoader } from "@/utils/hooks/useLoader";
 import Link from "next/link";
+import { PhoneCall } from "react-feather";
 
 export const AboutMeComponent = () => {
   const { state, dispatch }:DataContextStateTypes = useDataContext()
@@ -91,6 +92,22 @@ export const AboutMeComponent = () => {
                   </p>
                 </div>
               </div>
+
+              <div className="flex mt-6">
+                <PhoneCall className="text-indigo-600 text-3xl me-4 mt-2" />
+                <div className="">
+                  <h5 className="text-xl font-semibold mb-0">Contactos</h5>
+                  <p className="text-slate-400 flex group  gap-2 mt-2">
+                    <span className="text-slate-500">Oficinas:</span>
+                    <a href={`tel:${state.globalData.contactInformation?.phone1}`} className="group-hover:underline group-hover:cursor-pointer group-hover:text-indigo-600">{state.globalData.contactInformation?.phone1}</a>
+                  </p>
+                  <p className="text-slate-400 flex group gap-2 mt-2">
+                    <span className="text-slate-500">Planta:</span>
+                    <a href={`tel:${state.globalData.contactInformation?.phone2}`} className="group-hover:underline group-hover:cursor-pointer group-hover:text-indigo-600">{state.globalData.contactInformation?.phone2}</a>
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
